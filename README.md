@@ -1,1 +1,8 @@
-Update README with profile and projects
+# Hussain Khan – Cyber Security Portfolio
+
+Cyber Security learner focused on online scam investigation, fake account analysis,
+and cyber crime reporting.
+
+🔗 Live Website: https://hrk0245-ui.github.io  
+📄 Resume: Resume.pdf  
+📘 Case Study: Hussain_Khan_Fake_Account_Case_Study.pdf
