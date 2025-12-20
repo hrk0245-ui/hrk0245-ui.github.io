@@ -97,6 +97,10 @@ section h2 {
   border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
+}img {
+  max-width: 100%;
+  display: block;
+  margin: 15px 0;
 }
 
 /* ===== PROJECTS GRID ===== */
