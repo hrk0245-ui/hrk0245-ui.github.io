@@ -8,7 +8,19 @@
   const toggle = document.getElementById("darkToggle");
   toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
+  });<script>
+  const elements = document.querySelectorAll(".fade-up");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });<div class="project-card fade-up">
   });
+
+  elements.forEach(el => observer.observe(el));
+</script>
       </script>
         body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background-color:#f9f9f9; color:#333; }
         .container { max-width:1000px; margin:40px auto; padding:0 20px; }
@@ -132,3 +144,25 @@
             <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Resume"> Resume
         </a>
     </div>
+<section class="container fade-up">
+  <h2>Fake Instagram Account Investigation</h2>
+
+  <h3>Objective</h3>
+  <p>Identify and analyze fake Instagram profiles involved in scams.</p>
+
+  <h3>Evidence Collected</h3>
+  <ul>
+    <li>Screenshots</li>
+    <li>Profile links</li>
+    <li>Chat conversations</li>
+  </ul>
+
+  <h3>Investigation Steps</h3>
+  <p>Profile analysis, metadata review, pattern matching.</p>
+
+  <h3>Findings</h3>
+  <p>Confirmed impersonation and scam behavior.</p>
+
+  <h3>Reporting</h3>
+  <p>Prepared evidence for Indian Cyber Crime portal.</p>
+</section>
