@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <title>Hussain Khan | Cyber Security Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
+    <style><script>
+  const toggle = document.getElementById("darkToggle");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+      </script>
         body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background-color:#f9f9f9; color:#333; }
         .container { max-width:1000px; margin:40px auto; padding:0 20px; }
         header.hero { text-align:center; padding:50px 20px; background-color:#0077B5; color:white; }
