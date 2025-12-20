@@ -1,30 +1,25 @@
+/* ===== GLOBAL ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #0f172a;
-    color: #e5e7eb;
-    line-height: 1.6;
+  background: #f8f9fb;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #333;
 }
 
-a {
-    color: #38bdf8;
-    text-decoration: none;
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* HERO SECTION */
-.hero 
-}
-
-.hero h1 .hero {
+/* ===== HERO / HEADER ===== */
+.hero {
   background: linear-gradient(135deg, #0a0f1f, #111b3c);
   color: #ffffff;
   padding: 70px 20px;
@@ -39,173 +34,84 @@ a:hover {
 .hero p {
   font-size: 18px;
   opacity: 0.9;
-}
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.hero p {
-    color: #94a3b8;
-    margin-bottom: 25px;
-}
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-/* BUTTONS */
-.btn {
-    padding: 12px 22px;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: transform 0.2s, background-color 0.3s;
-}
-
-.btn.primary {
-    background-color: #0ea5e9;
-    color: #020617;
-}
-
-.btn.secondary {
-    background-color: transparent;
-    border: 2px solid #0ea5e9;
-    color: #0ea5e9;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
-
-/* CONTAINER */
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 50px 20px;
-}
-
-.container h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    border-left: 4px solid #38bdf8;
-    padding-left: 10px;
-}
-
-/* SKILLS */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skills span {
-    background-color: #020617;
-    padding: 8px 14px;
-    border-radius: 20px;
-    border: 1px solid #1e293b;
-    font-size: 0.9rem;
-}
-
-/* PROJECT CARDS */
-.project-card {
-    background-color: #020617;
-    border: 1px solid #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: transform 0.2s;
-}
-
-.project-card:hover {
-    transform: translateY(-6px);
-}
-
-.project-card h3 {
-    margin-bottom: 10px;
-    color: #38bdf8;
-}
-
-/* CONTACT */
-.contact p {
-    margin: 8px 0;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #1e293b;
-    color: #94a3b8;
-}
-<style>
-.project-card {
-  background-color:#f5f5f5;
-  padding:25px 20px;
-  border-radius:10px;
-  width:100%;
-  max-width:400px; /* maximum width for larger screens */
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-sizing:border-box;
-  margin:10px auto; /* center on small screens */
-}
-
-.project-card h3 {
-  margin-bottom:10px;
-  color:#333;
-}
-
-.project-card p {
-  color:#555;
-  font-size:0.95em;
-  margin-bottom:15px;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow:0 8px 20px rgba(0,0,0,0.15);
-}
-
-.project-btn {
-  display:block; /* full width on mobile */
-  text-decoration:none;
-  background-color:#0077B5;
-  color:white;
-  padding:12px;
-  border-radius:6px;
-  font-weight:bold;
-  text-align:center;
+/* ===== BUTTONS ===== */
+.btn,
+button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
   transition: all 0.3s ease;
-  margin-top:10px;
 }
 
-.project-btn:hover {
-  background-color:#0a95d5;
-  transform: translateY(-3px);
+.btn-primary {
+  background: #0d6efd;
+  color: #fff;
 }
 
-/* Flex wrap for projects container */
-#projects .projects-container {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px;
+.btn-primary:hover {
+  background: #084298;
+  transform: scale(1.05);
 }
-</style>
+
+.btn-success {
+  background: #25d366;
+  color: #fff;
+}
+
+.btn-success:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 26px;
+  border-left: 5px solid #0d6efd;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+/* ===== ABOUT ===== */
+.about p {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 900px;
+}
+
+/* ===== SKILLS ===== */
+.skills span {
+  display: inline-block;
+  background: #f1f5ff;
+  color: #0d6efd;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== PROJECTS GRID ===== */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+  margin-top: 20px;
 }
 
+/* ===== PROJECT CARD ===== */
 .project-card {
   background: #ffffff;
   border-radius: 10px;
+  padding: 18px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -214,13 +120,62 @@ footer {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-body {
-  background: #f8f9fb;
-  font-family: "Segoe UI", Tahoma, sans-serif;
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
+.project-card p {
+  font-size: 14px;
+  color: #555;
 }
+
+.project-card .outcome {
+  font-size: 13px;
+  background: #f1f5ff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* ===== LINKS & BUTTONS INSIDE CARDS ===== */
+.project-card a {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+/* ===== CONNECT SECTION ===== */
+.connect {
+  text-align: center;
+}
+
+.connect p {
+  margin-bottom: 15px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a0f1f;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+/* ===== SMOOTH SCROLL ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+    }
