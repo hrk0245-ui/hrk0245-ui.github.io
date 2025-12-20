@@ -7,3 +7,6 @@ documentation, and public online safety awareness.
 🔗 Live Website: https://hrk0245-ui.github.io  
 📄 Resume: Resume.pdf  
 📘 Case Study: Hussain_Khan_Fake_Account_Case_Study.pdf
+## Looking for Opportunities
+I am actively seeking internships or entry-level opportunities in Cyber Security,
+SOC support, or Digital Investigation roles.
