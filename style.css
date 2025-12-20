@@ -178,4 +178,30 @@ html {
   .hero p {
     font-size: 16px;
   }
-    }
+    }/* ===== DARK MODE ===== */
+body.dark {
+  background: #0b0f1a;
+  color: #e0e0e0;
+}
+
+body.dark section h2 {
+  border-left-color: #58a6ff;
+}
+
+body.dark .project-card {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+body.dark .project-card p {
+  color: #cbd5e1;
+}
+
+body.dark .skills span {
+  background: #1e293b;
+  color: #58a6ff;
+}
+
+body.dark footer {
+  background: #020617;
+}
