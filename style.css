@@ -1,4 +1,4 @@
-/* ========= GLOBAL STYLES ========= */
+/* ========= GLOBAL ========= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,9 +7,9 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #f4f6f9;
   color: #333;
+  line-height: 1.6;
 }
 
 .container {
@@ -20,21 +20,11 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* ========= HEADER / HERO SECTION ========= */
+/* ========= HEADER ========= */
 header.hero {
-  background: linear-gradient(135deg, #0077B5, #023e8a);
+  background: linear-gradient(to right, #0077B5, #023e8a);
   color: white;
   text-align: center;
   padding: 80px 20px;
@@ -46,14 +36,14 @@ header.hero h1 {
 }
 
 header.hero p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
 }
 
 .hero-buttons a {
   margin: 10px;
   padding: 14px 28px;
-  background-color: #fff;
+  background: #fff;
   color: #0077B5;
   border-radius: 50px;
   font-weight: bold;
@@ -62,8 +52,8 @@ header.hero p {
 }
 
 .hero-buttons .secondary {
-  background-color: #25D366;
-  color: white;
+  background: #25D366;
+  color: #fff;
 }
 
 .hero-buttons a:hover {
@@ -84,8 +74,7 @@ section {
 
 h2 {
   color: #0077B5;
-  margin: 30px 0 15px;
-  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
 /* ========= SKILLS ========= */
@@ -96,25 +85,24 @@ h2 {
 }
 
 .skills span {
-  background: #e0e0e0;
+  background-color: #e0e0e0;
   padding: 10px 20px;
   border-radius: 50px;
   font-size: 0.95rem;
 }
 
-/* ========= PROJECT CARDS ========= */
+/* ========= CARDS ========= */
 .project-card {
-  background: white;
+  background: #fff;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   margin-bottom: 25px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
@@ -148,22 +136,22 @@ h2 {
 
 .screenshots img {
   width: 280px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .note {
+  text-align: center;
   font-size: 0.9rem;
   color: #666;
-  text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 /* ========= CONTACT ========= */
 #contact {
   background-color: #e9f0f7;
-  padding: 60px 20px;
   text-align: center;
+  padding: 50px 20px;
 }
 
 #contact a {
@@ -186,14 +174,13 @@ h2 {
 
 /* ========= FOOTER ========= */
 footer {
-  background-color: #222;
+  background: #222;
   color: white;
   text-align: center;
   padding: 20px;
-  font-size: 0.95rem;
 }
 
-/* ========= RESPONSIVE DESIGN ========= */
+/* ========= RESPONSIVE ========= */
 @media (max-width: 768px) {
   header.hero h1 {
     font-size: 2.2rem;
@@ -206,6 +193,5 @@ footer {
 
   .skills span {
     padding: 8px 16px;
-    font-size: 0.9rem;
   }
 }
