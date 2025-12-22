@@ -1,163 +1,207 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <title>हुसैन खान | साइबर सिक्योरिटी पोर्टफोलियो</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>हुसैन खान | साइबर सिक्योरिटी पोर्टफोलियो</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
 
-        header.hero {
-            text-align: center;
-            padding: 70px 20px;
-            background-color: #0077B5;
-            color: white;
-        }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
 
-        header.hero h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
+    header.hero {
+      background: linear-gradient(to right, #0077B5, #023e8a);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-        header.hero p {
-            font-size: 1.2em;
-        }
+    header.hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
 
-        .hero-buttons a {
-            margin: 10px;
-            padding: 12px 25px;
-            border-radius: 6px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-        }
+    header.hero p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
 
-        .primary {
-            background-color: #333;
-        }
+    .hero-buttons a {
+      margin: 10px;
+      padding: 14px 28px;
+      background-color: #fff;
+      color: #0077B5;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
 
-        .secondary {
-            background-color: #25D366;
-        }
+    .hero-buttons .secondary {
+      background-color: #25D366;
+      color: #fff;
+    }
 
-        .headline {
-            text-align: center;
-            max-width: 800px;
-            margin: 25px auto;
-            font-size: 1.1em;
-            color: #444;
-        }
+    .hero-buttons a:hover {
+      transform: scale(1.05);
+    }
 
-        h2 {
-            color: #0077B5;
-            margin-bottom: 15px;
-        }
+    .headline {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+      margin: 30px 0;
+    }
 
-        .skills span {
-            display: inline-block;
-            background: #e0e0e0;
-            margin: 6px;
-            padding: 8px 14px;
-            border-radius: 6px;
-            font-size: 0.95em;
-        }
+    h2 {
+      color: #0077B5;
+      margin: 30px 0 15px;
+      font-size: 1.8rem;
+    }
 
-        .project-card {
-            background-color: #f5f5f5;
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+    section {
+      margin-bottom: 60px;
+    }
 
-        .project-card h3 {
-            margin-bottom: 10px;
-        }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-        .project-btn {
-            display: inline-block;
-            margin-top: 10px;
-            background-color: #0077B5;
-            color: white;
-            padding: 10px 18px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .skills span {
+      background-color: #e0e0e0;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+    }
 
-        #contact {
-            background-color: #f5f5f5;
-            padding: 50px 20px;
-            text-align: center;
-        }
+    .project-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
 
-        #contact a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 22px;
-            border-radius: 8px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
 
-        .linkedin { background: #0077B5; }
-        .email { background: #D44638; }
-        .resume { background: #333; }
+    .project-card h3 {
+      margin-bottom: 10px;
+    }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
+    .project-btn {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #0077B5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
 
-        .screenshots {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 15px;
-        }
+    .project-btn:hover {
+      background-color: #023e8a;
+    }
 
-        .screenshots img {
-            width: 280px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
 
-        .note {
-            font-size: 14px;
-            color: #666;
-            text-align: center;
-            margin-top: 10px;
-        }
-    </style>
+    .screenshots img {
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #666;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    #contact {
+      background-color: #e9f0f7;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #contact a {
+      margin: 10px;
+      padding: 14px 25px;
+      border-radius: 50px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    #contact a:hover {
+      transform: scale(1.05);
+    }
+
+    .linkedin { background: #0077B5; }
+    .email { background: #D44638; }
+    .resume { background: #333; }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header.hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .screenshots img {
+        width: 90%;
+      }
+
+      .skills span {
+        padding: 8px 16px;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header class="hero">
-    <h1>हुसैन खान</h1>
-    <p>साइबर सिक्योरिटी लर्नर | काली लिनक्स उपयोगकर्ता</p>
-
-    <div class="hero-buttons">
-        <a href="Resume.pdf" target="_blank" class="primary">📄 रिज्यूमे डाउनलोड करें</a>
-        <a href="https://wa.me/918302491727" target="_blank" class="secondary">💬 WhatsApp</a>
-    </div>
+  <h1>हुसैन खान</h1>
+  <p>साइबर सिक्योरिटी लर्नर | काली लिनक्स उपयोगकर्ता</p>
+  <div class="hero-buttons">
+    <a href="Resume.pdf" target="_blank" class="primary">📄 रिज्यूमे डाउनलोड करें</a>
+    <a href="https://wa.me/918302491727" target="_blank" class="secondary">💬 WhatsApp</a>
+  </div>
 </header>
 
 <p class="headline">
@@ -165,90 +209,74 @@
 </p>
 
 <section class="container">
-    <h2>मेरे बारे में</h2>
+  <h2>मेरे बारे में</h2>
+  <p>
+    मैं एक स्व-शिक्षित साइबर सिक्योरिटी लर्नर हूँ जिसके पास नकली खाता जांच, ऑनलाइन घोटाला विश्लेषण और साइबर अपराध रिपोर्टिंग में हाथ-पांव टूट चुका है। मैं नैतिक जांच, साक्ष्य संग्रह और जन सुरक्षा जागरूकता पर केंद्रित हूँ।
+  </p>
+</section>
+
+<section class="container">
+  <h2>कौशल</h2>
+  <div class="skills">
+    <span>काली लिनक्स (बिगिनर – प्रैक्टिकल)</span>
+    <span>नकली खाता जांच</span>
+    <span>साइबर अपराध रिपोर्टिंग (भारत)</span>
+    <span>ऑनलाइन घोटाला जागरूकता</span>
+    <span>एचटीएमएल और सीएसएस</span>
+    <span>मैनुअल OSINT (बेसिक)</span>
+  </div>
+</section>
+
+<section class="container">
+  <h2>प्रोजेक्ट्स और केस स्टडीज़</h2>
+  <div class="project-card">
+    <h3>नकली इंस्टाग्राम खाता जांच</h3>
     <p>
-        मैं एक स्व-शिक्षित साइबर सिक्योरिटी लर्नर हूँ जिसके पास नकली खाता जांच, ऑनलाइन घोटाला विश्लेषण और साइबर अपराध रिपोर्टिंग में हाथ-पांव टूट चुका है। मैं नैतिक जांच, साक्ष्य संग्रह और जन सुरक्षा जागरूकता पर केंद्रित हूँ।
+      नकली इंस्टाग्राम प्रोफाइल की पहचान की और घोटाला व्यवहार का विश्लेषण करने के लिए स्क्रीनशॉट, प्रोफाइल लिंक और चैट लॉग संग्रहीत किए।
     </p>
-</section>
+    <a href="Hussain_Khan_Fake_Account_Case_Study.pdf" target="_blank" class="project-btn">केस स्टडी देखें</a>
+  </div>
 
-<section class="container">
-    <h2>कौशल</h2>
-    <div class="skills">
-        <span>काली लिनक्स (बिगिनर – प्रैक्टिकल)</span>
-        <span>नकली खाता जांच</span>
-        <span>साइबर अपराध रिपोर्टिंग (भारत)</span>
-        <span>ऑनलाइन घोटाला जागरूकता</span>
-        <span>एचटीएमएल और सीएसएस</span>
-        <span>मैनुअल OSINT (बेसिक)</span>
-    </div>
-</section>
-
-<section class="container">
-    <h2>प्रोजेक्ट्स और केस स्टडीज़</h2>
-
-    <div class="project-card">
-        <h3>नकली इंस्टाग्राम खाता जांच</h3>
-        <p>
-            नकली इंस्टाग्राम प्रोफाइल की पहचान की और घोटाला व्यवहार का विश्लेषण करने के लिए स्क्रीनशॉट, प्रोफाइल लिंक और चैट लॉग संग्रहीत किए।
-        </p>
-        <a href="Hussain_Khan_Fake_Account_Case_Study.pdf" target="_blank" class="project-btn">
-            केस स्टडी देखें
-        </a>
-    </div>
-
-    <div class="project-card">
-        <h3>ऑनलाइन घोटाला जागरूकता और रिपोर्टिंग गाइड</h3>
-        <p>
-            आम ऑनलाइन घोटालों और साधारण भाषा में भारतीय साइबर अपराध रिपोर्टिंग प्रक्रिया की व्याख्या करते हुए एक दस्तावेज़ बनाया गया।
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>व्यक्तिगत साइबर सिक्योरिटी पोर्टफोलियो वेबसाइट</h3>
-        <p>
-            HTML और CSS का उपयोग कर GitHub Pages पर एक पेशेवर पोर्टफोलियो वेबसाइट डिज़ाइन और तैनात की गई।
-        </p>
-    </div>
-</section>
-
-<section class="container">
-    <h2>साक्ष्य (गोपनीयता के लिए धुंधला किया गया)</h2>
+  <div class="project-card">
+    <h3>ऑनलाइन घोटाला जागरूकता और रिपोर्टिंग गाइड</h3>
     <p>
-        जांच के दौरान एकत्र किए गए चयनित स्क्रीनशॉट नीचे दिए गए हैं। 
-        सभी संवेदनशील जानकारी को जानबूझकर धुंधला किया गया है ताकि 
-        गोपनीयता और कानूनी सुरक्षा सुनिश्चित हो सके।
+      आम ऑनलाइन घोटालों और साधारण भाषा में भारतीय साइबर अपराध रिपोर्टिंग प्रक्रिया की व्याख्या करते हुए एक दस्तावेज़ बनाया गया।
     </p>
+  </div>
 
-    <div class="screenshots">
-        <div>
-            <img src="images/instagram-profile-blur.jpg" alt="धुंधला इंस्टाग्राम प्रोफाइल स्क्रीनशॉट">
-            <p style="text-align:center;">नकली इंस्टाग्राम प्रोफाइल</p>
-        </div>
-        <div>
-            <img src="images/instagram-chat-blur.jpg" alt="धुंधला घोटाला चैट स्क्रीनशॉट">
-            <p style="text-align:center;">घोटाला चैट साक्ष्य</p>
-        </div>
-    </div>
-    <p class="note">
-        सभी स्क्रीनशॉट गोपनीयता की सुरक्षा और नैतिक जांच मानकों के अनुरूप जानबूझकर धुंधले किए गए हैं।
+  <div class="project-card">
+    <h3>व्यक्तिगत साइबर सिक्योरिटी पोर्टफोलियो वेबसाइट</h3>
+    <p>
+      HTML और CSS का उपयोग कर GitHub Pages पर एक पेशेवर पोर्टफोलियो वेबसाइट डिज़ाइन और तैनात की गई।
     </p>
+  </div>
+</section>
+
+<section class="container">
+  <h2>साक्ष्य (गोपनीयता के लिए धुंधला किया गया)</h2>
+  <p>
+    जांच के दौरान एकत्र किए गए चयनित स्क्रीनशॉट नीचे दिए गए हैं। 
+    सभी संवेदनशील जानकारी को जानबूझकर धुंधला किया गया है ताकि 
+    गोपनीयता और कानूनी सुरक्षा सुनिश्चित हो सके।
+  </p>
+
+  <div class="screenshots">
+    <img src="images/instagram-profile-blur.jpg" alt="नकली इंस्टाग्राम प्रोफाइल">
+    <img src="images/instagram-chat-blur.jpg" alt="घोटाला चैट साक्ष्य">
+  </div>
+
+  <p class="note">सभी स्क्रीनशॉट गोपनीयता की सुरक्षा और नैतिक जांच मानकों के अनुरूप जानबूझकर धुंधले किए गए हैं।</p>
 </section>
 
 <section id="contact">
-    <h2>मुझसे जुड़ें</h2>
-    <a href="https://www.linkedin.com/in/hussain-khan-62a830283/" target="_blank" class="linkedin">
-        LinkedIn
-    </a>
-    <a href="mailto:hrk0245@gmail.com" class="email">
-        ईमेल
-    </a>
-    <a href="Resume.pdf" target="_blank" class="resume">
-        रिज्यूमे
-    </a>
+  <h2>मुझसे जुड़ें</h2>
+  <a href="https://www.linkedin.com/in/hussain-khan-62a830283/" target="_blank" class="linkedin">LinkedIn</a>
+  <a href="mailto:hrk0245@gmail.com" class="email">ईमेल</a>
+  <a href="Resume.pdf" target="_blank" class="resume">रिज्यूमे</a>
 </section>
 
 <footer>
-    © 2025 हुसैन खान | साइबर सिक्योरिटी पोर्टफोलियो
+  &copy; 2025 हुसैन खान | साइबर सिक्योरिटी पोर्टफोलियो
 </footer>
 
 </body>
